@@ -12,3 +12,6 @@ Special rules for the project:
 ### How should I work TS/JS components?
 [Basic](https://basarat.gitbook.io/typescript/styleguide) <br>
 [Full](https://ts.dev/style/#ts-ignore)
+
+### How should I work SCSS/CSS/HTML components/templates?
+[Full](https://codeguide.academy/html-css.html)
