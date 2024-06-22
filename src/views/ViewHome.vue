@@ -1,6 +1,6 @@
 <template>
   <div class="view-home">
-    hello world
+    <router-link to="/example/1">123</router-link>
   </div>
 </template>
 

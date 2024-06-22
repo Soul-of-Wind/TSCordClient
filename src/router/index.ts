@@ -1,14 +1,23 @@
-import { createMemoryHistory, createRouter } from 'vue-router'
+import {createRouter, createWebHistory, RouteRecordRaw} from 'vue-router'
 
-import ViewHome from "../view/ViewHome.vue";
+import ViewHome from "../views/ViewHome.vue";
+import ViewExample from '../views/example/[id].vue';
+import LayoutDefault from "../layouts/LayoutDefault.vue";
 
-const routes = [
-    { path: '/', component: ViewHome },
-    { path: '/example/:id', component: import('../view/example/[id].vue') },
+const routes: RouteRecordRaw[] = [
+    {
+        path: '/',
+        component: LayoutDefault,
+        name: 'Layout Default',
+        children: [
+            { path: '/', component: ViewHome, name: 'Home' },
+            { path: '/example/:id', component: ViewExample, name: 'Example' },
+        ]
+    },
 ]
 
 const router = createRouter({
-    history: createMemoryHistory(),
+    history: createWebHistory(),
     routes,
 })
 
