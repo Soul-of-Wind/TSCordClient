@@ -1,0 +1,7 @@
+{
+  "extends": [
+    "stylelint-config-htmlacademy",
+    "stylelint-order-htmlacademy",
+    "stylelint-config-recommended-vue"
+  ]
+}
