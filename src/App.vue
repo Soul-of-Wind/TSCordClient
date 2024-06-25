@@ -1,5 +1,10 @@
 <template>
  <router-view />
+ <div>
+    <div class="test">
+
+    </div>
+ </div>
 </template>
 
 <script setup lang="ts">
@@ -9,5 +14,7 @@
 
 
 <style>
-
+.test {
+    font-weight: normal;
+}
 </style>
