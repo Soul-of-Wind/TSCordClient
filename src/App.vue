@@ -1,10 +1,8 @@
 <template>
- <router-view />
- <div>
-    <div class="test">
-
-    </div>
- </div>
+  <router-view />
+  <div>
+    <div class="test" />
+  </div>
 </template>
 
 <script setup lang="ts">
