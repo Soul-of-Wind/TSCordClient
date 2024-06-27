@@ -7,6 +7,7 @@ import { createI18n, useI18n } from 'vue-i18n';
 import EN from './i18n/en.json'
 import RU from './i18n/ru.json'
 
+// use $t('title')
 const i18n = createI18n({
     locale: 'RU',
     messages: {

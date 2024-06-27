@@ -1,9 +1,6 @@
 <template>
  <router-view />
  <div>
-    <div class="test">
-      {{ $t('title') }}
-    </div>
  </div>
 </template>
 
