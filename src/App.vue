@@ -2,7 +2,7 @@
  <router-view />
  <div>
     <div class="test">
-
+      {{ $t('title') }}
     </div>
  </div>
 </template>
@@ -14,7 +14,4 @@
 
 
 <style>
-.test {
-    font-weight: normal;
-}
 </style>
