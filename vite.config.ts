@@ -2,6 +2,7 @@ import { defineConfig, loadEnv } from "vite";
 import vue from "@vitejs/plugin-vue";
 import path from "path";
 import stylelint from 'vite-plugin-stylelint';
+import eslint from "vite-plugin-eslint";
 
 // https://vitejs.dev/config/
 export default defineConfig(async ({ mode }) => {
@@ -14,6 +15,7 @@ export default defineConfig(async ({ mode }) => {
         fix: env.VITE_STYLELINT_AUTO_FIX === 'true',
         dev: mode === 'development'
       }),
+      eslint()
     ],
     resolve: {
       alias: {

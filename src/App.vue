@@ -1,7 +1,8 @@
 <template>
- <router-view />
- <div>
- </div>
+  <router-view />
+  <div>
+    <div class="test" />
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -9,6 +10,3 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 </script>
 
-
-<style>
-</style>
