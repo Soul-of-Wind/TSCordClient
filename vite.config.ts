@@ -22,6 +22,9 @@ export default defineConfig(async ({ mode }) => {
         '@': path.resolve(__dirname, 'src')
       }
     },
+    test: {
+      environment: "jsdom",
+    },
 
     // Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`
     //

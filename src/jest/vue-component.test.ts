@@ -1,9 +1,18 @@
-import { render } from "@testing-library/vue";
-import ButtonController from "@ButtonController.vue"
+import {mount} from '@vue/test-utils'
+import {test, expect} from 'vitest'
+// The component to test
+const MessageComponent = {
+    template: '<p>{{ msg }}</p>',
+    props: ['msg']
+}
 
+test('displays message', () => {
+    const wrapper = mount(MessageComponent, {
+        props: {
+            msg: 'Hello world'
+        }
+    })
 
-// function test('renderers base button', () => {
-//     const { debug } = render(ButtonController)
-
-//     debug()
-// })
+    // Assert the rendered text of the component
+    expect(wrapper.text()).toContain('Hello world')
+})
