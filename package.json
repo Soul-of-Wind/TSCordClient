@@ -23,17 +23,20 @@
     "@types/eslint__js": "^8.42.3",
     "@types/node": "^20.14.8",
     "@vitejs/plugin-vue": "^5.0.4",
+    "@vue/test-utils": "^2.4.6",
     "eslint": "^9.5.0",
     "eslint-plugin-vue": "^9.26.0",
+    "jsdom": "^24.1.0",
     "stylelint": "^16.6.1",
     "stylelint-config-htmlacademy": "^4.2.3",
     "stylelint-config-recommended-vue": "^1.5.0",
     "stylelint-order-htmlacademy": "2.1.1",
-    "typescript": "^5.5.2",
+    "typescript": "^5.0.2",
     "typescript-eslint": "^8.0.0-alpha.10",
     "vite": "^5.0.0",
     "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-stylelint": "^5.3.1",
+    "vitest": "^1.6.0",
     "vue-tsc": "^1.8.5"
   }
 }

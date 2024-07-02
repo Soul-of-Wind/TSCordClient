@@ -28,7 +28,7 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "eslint.config.js",
-    "node_modules/vitest/globals.d.ts"
+    "node_modules/vitest/globals.d.ts",
   ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
