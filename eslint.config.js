@@ -6,15 +6,13 @@ import tseslint from 'typescript-eslint';
 export default tseslint.config(
     eslint.configs.recommended,
     ...tseslint.configs.strict,
-    ...pluginVue.configs['flat/recommended'],
+    ...pluginVue.configs['flat/base'],
     {
+        files: ['**/*.ts'],
         ignores: ['*.config.{ts,js}'],
         languageOptions: {
             parserOptions: {
-                // parser: tseslint.parser,
-                // project: true,
-                // tsconfigRootDir: import.meta.dirname,
-                // extraFileExtensions: ['.vue'],
+
                 parser: tseslint.parser,
                 project: './tsconfig.json',
                 extraFileExtensions: ['.vue'],
