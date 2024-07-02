@@ -30,7 +30,7 @@
     "stylelint-config-recommended-vue": "^1.5.0",
     "stylelint-order-htmlacademy": "2.1.1",
     "typescript": "^5.5.2",
-    "typescript-eslint": "^7.14.1",
+    "typescript-eslint": "^8.0.0-alpha.10",
     "vite": "^5.0.0",
     "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-stylelint": "^5.3.1",
