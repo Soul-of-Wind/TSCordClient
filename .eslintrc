@@ -1,0 +1,27 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:vue/vue3-recommended",
+    "eslint:recommended",
+    "@vue/typescript/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "plugins": [
+  ],
+  "ignorePatterns": [
+    "**/vite*.ts"
+  ],
+  "rules": {
+    "semi": "error",
+    "@typescript-eslint/naming-convention": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "quotes": ["error", "single"]
+  }
+}
