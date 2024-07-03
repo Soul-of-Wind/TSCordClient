@@ -1,12 +1,12 @@
 <template>
-<div class="ui-example">
+  <div class="ui-example">
     {{ msg }}
-</div>
+  </div>
 </template>
 
 <script setup lang="ts">
 
 defineProps<{ 
   msg: string
-}>()
+}>();
 </script>

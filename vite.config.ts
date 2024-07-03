@@ -1,12 +1,12 @@
-import { defineConfig, loadEnv } from "vite";
-import vue from "@vitejs/plugin-vue";
-import path from "path";
+import { defineConfig, loadEnv } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import path from 'path';
 import stylelint from 'vite-plugin-stylelint';
-import eslint from "vite-plugin-eslint";
+import eslint from 'vite-plugin-eslint';
 
 // https://vitejs.dev/config/
 export default defineConfig(async ({ mode }) => {
-  const env = loadEnv('', process.cwd())
+  const env = loadEnv('', process.cwd());
 
   return {
     plugins: [
@@ -23,7 +23,7 @@ export default defineConfig(async ({ mode }) => {
       }
     },
     test: {
-      environment: "jsdom",
+      environment: 'jsdom',
     },
 
     // Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`
@@ -36,8 +36,8 @@ export default defineConfig(async ({ mode }) => {
       strictPort: true,
       watch: {
         // 3. tell vite to ignore watching `src-tauri`
-        ignored: ["**/src-tauri/**"],
+        ignored: ['**/src-tauri/**'],
       },
     },
-  }
+  };
 });
