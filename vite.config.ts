@@ -15,7 +15,9 @@ export default defineConfig(async ({ mode }) => {
         fix: env.VITE_STYLELINT_AUTO_FIX === 'true',
         dev: mode === 'development'
       }),
-      eslint()
+      eslint({
+        exclude: ['/virtual:/**', 'node_modules/**']
+      })
     ],
     resolve: {
       alias: {

@@ -16,7 +16,8 @@
   "plugins": [
   ],
   "ignorePatterns": [
-    "**/vite*.ts"
+    "**/vite*.ts",
+    "**/stories/**.*"
   ],
   "rules": {
     "semi": "error",
