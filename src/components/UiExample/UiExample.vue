@@ -13,9 +13,8 @@
 </template>
 
 <script setup lang="ts">
-
 import {ref} from 'vue';
-import {ExampleEnum} from '@/components/UiExample/UiExample.types.ts';
+import {ExampleEnum} from './UiExample.types.ts';
 
 const count = ref(0);
 
