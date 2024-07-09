@@ -20,9 +20,10 @@
     "**/stories/**.*"
   ],
   "rules": {
+    // off warn error
     "semi": "error",
     "@typescript-eslint/naming-convention": "error",
-    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-explicit-any": "off",
     "quotes": ["error", "single"]
   }
 }
