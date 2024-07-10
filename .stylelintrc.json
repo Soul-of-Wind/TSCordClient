@@ -4,6 +4,9 @@
     "stylelint-order-htmlacademy",
     "stylelint-config-recommended-vue"
   ],
+  "rules": {
+    "no-unknown-custom-properties": null
+  },
   "ignoreFiles": [
     "**/*.js",
     "**/*.ts",
