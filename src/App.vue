@@ -1,8 +1,5 @@
 <template>
   <router-view />
-  <div>
-    {{ $t('title') }}
-  </div>
 </template>
 
 <script setup lang="ts">
