@@ -25,8 +25,9 @@ function addCount(forceCount?: number) {
 
 defineSlots<{
   /** Тестовое описание слота */
-  default(props: { num: string | number }): any;
+  default(props: { num: string | number }): void
 }>();
+
 
 defineExpose<{ addCount: (forceCount: number) => void }>({
   addCount
