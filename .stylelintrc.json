@@ -3,5 +3,11 @@
     "stylelint-config-htmlacademy",
     "stylelint-order-htmlacademy",
     "stylelint-config-recommended-vue"
+  ],
+  "ignoreFiles": [
+    "**/*.js",
+    "**/*.ts",
+    "**/*.json",
+    "node_modules/**"
   ]
 }

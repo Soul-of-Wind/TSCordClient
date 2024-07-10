@@ -16,9 +16,11 @@
   "plugins": [
   ],
   "ignorePatterns": [
-    "**/vite*.ts"
+    "**/vite*.ts",
+    "**/stories/**.*"
   ],
   "rules": {
+    // off warn error
     "semi": "error",
     "@typescript-eslint/naming-convention": "error",
     "@typescript-eslint/no-explicit-any": "error",
