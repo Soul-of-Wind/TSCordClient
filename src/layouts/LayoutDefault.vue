@@ -1,5 +1,4 @@
 <template>
-  Default Layout
   <router-view />
 </template>
 
