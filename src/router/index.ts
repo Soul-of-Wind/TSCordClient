@@ -12,6 +12,7 @@ const routes: RouteRecordRaw[] = [
         children: [
             { path: '/', component: ViewHome, name: 'Home' },
             { path: '/example/:id', component: ViewExample, name: 'Example' },
+            { path: '/server', component: import('@/views/server/ViewServer.vue') }
         ]
     },
 ];
