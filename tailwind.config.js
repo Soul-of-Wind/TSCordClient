@@ -5,7 +5,14 @@
       "./src/**/*.{vue,js,ts,jsx,tsx}",
     ],
     theme: {
-      extend: {},
+      extend: {
+        
+      },
     },
-    plugins: [],
+    daisyui: {
+      themes: ["light", "dark", "cupcake"],
+    },
+    plugins: [
+      require('daisyui'),
+    ],
   }
