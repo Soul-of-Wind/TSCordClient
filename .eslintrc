@@ -17,7 +17,8 @@
   ],
   "ignorePatterns": [
     "**/vite*.ts",
-    "**/stories/**.*"
+    "**/stories/**.*",
+    "**/*.config.js"
   ],
   "rules": {
     // off warn error
