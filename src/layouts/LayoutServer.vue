@@ -3,8 +3,8 @@
     <div class="view-server-home__list">
       <ServerAside />
     </div>
-    <div>
-      <UiChat />
+    <div :key="$route.path">
+      <router-view v-if="server.isLoaded" />
     </div>
     <div>
       <ServerUserList />
@@ -13,10 +13,15 @@
 </template>
 
 <script setup lang="ts">
-
 import ServerAside from '@/components/server/ServerAside/ServerAside.vue';
-import UiChat from '@/components/ui/UiChat/UiChat.vue';
 import ServerUserList from '@/components/server/ServerUserList/ServerUserList.vue';
+import {useRoute} from 'vue-router';
+import {useServerListStore} from '@/stores/server-list.ts';
+
+const route = useRoute();
+const server = useServerListStore().getServer(+route.params.uid);
+server.init();
+
 </script>
 
 <style lang="scss" scoped>
