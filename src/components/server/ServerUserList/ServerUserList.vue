@@ -2,7 +2,7 @@
   <div class="server-user-list">
     <div>Пользователи на сервере: </div>
     <div
-      v-for="(item, key) in userList"
+      v-for="(item, key) in server.users"
       :key="key"
       class="user-card"
     >
@@ -12,10 +12,11 @@
 </template>
 
 <script setup lang="ts">
-const userList = [
-    'Kotaro',
-    'Panasonic'
-];
+import {useRoute} from 'vue-router';
+import {useServerListStore} from '@/stores/server-list.ts';
+
+const route = useRoute();
+const server = useServerListStore().getServer(+route.params.uid);
 </script>
 
 <style scoped lang="scss">

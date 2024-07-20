@@ -1,23 +1,24 @@
 <template>
-  <div class="server-aside">
-    Каналы:
-    <div
-      v-for="(item, key) in channelList"
+  <div
+    class="server-aside"
+  >
+    <router-link
+      v-for="(channel, key) in server.channels"
       :key="key"
-      class="server-aside-channel"
+      :to="`/server/${route.params.uid}/${channel.id}`"
     >
-      {{ item }}
-    </div>
+      {{ channel.name }}
+    </router-link>
   </div>
 </template>
 
 <script setup lang="ts">
-import {ref} from 'vue';
+import {useRoute} from 'vue-router';
+import {useServerListStore} from '@/stores/server-list.ts';
 
-const channelList = ref([
-    'Текстовый 1',
-    'Текстовый 2'
-]);
+const route = useRoute();
+const server = useServerListStore().getServer(+route.params.uid);
+
 </script>
 
 <style lang="scss">
