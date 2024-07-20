@@ -1,5 +1,5 @@
 <template>
-  <router-view />
+  <router-view class="h-dvh" />
 </template>
 
 <script setup lang="ts">

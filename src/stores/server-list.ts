@@ -11,10 +11,13 @@ export const useServerListStore = defineStore('server-list', () => {
   );
 
   function create(server: Omit<ServerOptions, 'uid'>) {
-    serverList.value.push({
+    const serverOptions = {
       ...server,
       uid: new Date().getTime()
-    });
+    };
+    serverList.value.push(serverOptions);
+
+    return serverOptions;
   }
 
   function remove(uid: ServerOptions['uid']) {
