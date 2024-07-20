@@ -1,6 +1,11 @@
 <template>
   <div class="view-home">
     <div class="shadow-block">
+      <div class="divide-y divide-fuchsia-300">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
       <form
         class="login-form"
         action="#"
@@ -51,6 +56,8 @@ function onSubmitForm() {
 .shadow-block {
   padding: 16px;
   box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+  width: 100%;
+  height: 100%;
 }
 
 .login-form {
