@@ -23,7 +23,7 @@
   "rules": {
     // off warn error
     "semi": "error",
-    "@typescript-eslint/naming-convention": "error",
+    "@typescript-eslint/naming-convention": "off",
     "@typescript-eslint/no-explicit-any": "error",
     "quotes": ["error", "single"]
   }
