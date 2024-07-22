@@ -22,8 +22,7 @@
 
 <script setup lang="ts">
 import {
-  computed,
-  defineProps,
+  computed, ComputedRef,
   onMounted,
   onUnmounted,
   WritableComputedRef
@@ -32,7 +31,7 @@ import {defineRule} from '@/components/ui/form/assets/utils';
 import useInstanceForm from '@/components/ui/form/assets/composable/useInstanceForm.ts';
 
 export interface IInput {
-  readonly isValid: boolean,
+  readonly isValid: ComputedRef<boolean>,
   readonly innerValue: WritableComputedRef<string>
 }
 

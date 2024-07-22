@@ -21,6 +21,8 @@ export default defineConfig(async ({ mode }) => {
     },
     test: {
       environment: 'jsdom',
+      globals: true,
+      dts: true,
     },
 
     // Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`
