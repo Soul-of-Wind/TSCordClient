@@ -27,5 +27,13 @@
     "@typescript-eslint/naming-convention": "off",
     "@typescript-eslint/no-explicit-any": "error",
     "quotes": ["error", "single"]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.test.ts"],
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "off"
+      }
+    }
+  ]
 }

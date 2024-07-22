@@ -20,7 +20,6 @@
       placeholder="Имя пользователя"
       :rules="generalRules"
     />
-
     <UiButton
       type="submit"
       is-accent
